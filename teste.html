@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .cart {
+      width: 200px;
+      height: 200px;
+      background-color: lightgray;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+    }
+
+    .cartFloat {
+      width: 50px;
+      height: 50px;
+      background-color: red;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+    }
+
+    #add {
+      padding: 10px 40px;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+    }
+  </style>
+</head>
+<body>
+    <p>p</p><p>p</p><p>p</p><p>p</p><p>p</p><p>p</p><p>p</p><p>p</p>
+  <button id="add">Add</button>
+  <div class="cartFloat"></div>
+  <div class="cart"></div>
+
+  <script>
+    let addButton = document.getElementById('add');
+    let cart = document.querySelector('.cart');
+    
+    let cartFloatDiv = document.querySelector('.cartFloat');
+
+    const btnAddPosition = getComputedStyle(addButton).getPropertyValue('right');
+    const cartPosition = getComputedStyle(cart).getPropertyValue('right');
+
+    cartFloatDiv.style.right = btnAddPosition;
+
+    addButton.addEventListener('click', function() {
+        cartFloatDiv.style.transition = "4s"
+        cartFloatDiv.style.right = cartPosition;
+    });
+    
+  </script>
+</body>
+</html>

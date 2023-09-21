@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="color.css">
+</head>
+<body>
+    <div class="cntrCamadaFundo">
+        <div class="camadaFundo"></div>
+        <p class="textoFundo">Air Jordan</p>
+    </div>
+
+    <header>
+        <div class="cntrLogo">
+            <img src="img/nike-logotipo.png" alt="">
+        </div>
+        <div class="cntrCategorias">
+            <ul>
+                <li class="categoarias" onclick="clickCategorias('0')"><span>Novos</span> lançamentos</li>
+                <li class="categoarias" onclick="clickCategorias('1')">Masculino</li>
+                <li class="categoarias" onclick="clickCategorias('2')">Feminino</li>
+                <li class="categoarias" onclick="clickCategorias('3')">Infantil</li>
+                <li class="categoarias" onclick="clickCategorias('4')">Customizar</li>
+            </ul>
+        </div>
+        <span>
+            <div class="cntrBarraPesquisa">
+                <div class="cntrInput">
+                    <!--svg lupa-->
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 32 32" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g transform="matrix(1.3000000000000003,0,0,1.3000000000000003,-4.803686141967777,-4.803686141967777)"><path d="m27.414 24.586-5.077-5.077A9.932 9.932 0 0 0 24 14c0-5.514-4.486-10-10-10S4 8.486 4 14s4.486 10 10 10a9.932 9.932 0 0 0 5.509-1.663l5.077 5.077a2 2 0 1 0 2.828-2.828zM7 14c0-3.86 3.14-7 7-7s7 3.14 7 7-3.14 7-7 7-7-3.14-7-7z" fill="#ffffff" data-original="#000000" class=""></path></g></svg>
+                    <input type="text" name="search" id="search" placeholder="Search">
+                </div>
+            </div>
+            <div class="cntrCarrinho" onclick="abrirAbaCarrinho()">
+                <p id="numCarrinho">0</p>
+                <!--svg carrinho-->
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 32 32" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><circle r="16" cx="16" cy="16" fill="#bac8d3" shape="circle"></circle><g transform="matrix(0.68,0,0,0.68,5.120299377441407,5.11999994277954)"><path d="M30.352 6.137A2.987 2.987 0 0 0 28 5H7.733l-.759-3.229A1 1 0 0 0 6 1H2a1 1 0 0 0 0 2h3.208l3.535 15.026A2.992 2.992 0 0 0 9 24h17a1 1 0 0 0 0-2H9a1 1 0 0 1 0-2h16.882a2.99 2.99 0 0 0 2.92-2.313l2.119-9a2.986 2.986 0 0 0-.569-2.55z" fill="#ffffff" data-original="#000000" class=""></path><circle cx="23" cy="28" r="3" fill="#ffffff" data-original="#000000" class=""></circle><circle cx="12" cy="28" r="3" fill="#ffffff" data-original="#000000" class=""></circle></g></svg>
+            </div>
+        </span>
+    </header>
+
+    <main>
+        <div class="cntrLeft">
+            <div class="preco">$225</div>
+            <p class="nomeProduto">Air Jordan 6 Retro SP</p>
+            <div class="cntrEstrelas">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 511.987 511" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g transform="matrix(1,0,0,1,0,10)"><path fill="#ffc107" d="M510.652 185.902a27.158 27.158 0 0 0-23.425-18.71l-147.774-13.419-58.433-136.77C276.71 6.98 266.898.494 255.996.494s-20.715 6.487-25.023 16.534l-58.434 136.746-147.797 13.418A27.208 27.208 0 0 0 1.34 185.902c-3.371 10.368-.258 21.739 7.957 28.907l111.7 97.96-32.938 145.09c-2.41 10.668 1.73 21.696 10.582 28.094 4.757 3.438 10.324 5.188 15.937 5.188 4.84 0 9.64-1.305 13.95-3.883l127.468-76.184 127.422 76.184c9.324 5.61 21.078 5.097 29.91-1.305a27.223 27.223 0 0 0 10.582-28.094l-32.937-145.09 111.699-97.94a27.224 27.224 0 0 0 7.98-28.927zm0 0" data-original="#ffc107" class=""></path></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 511.987 511" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g transform="matrix(1,0,0,1,0,10)"><path fill="#ffc107" d="M510.652 185.902a27.158 27.158 0 0 0-23.425-18.71l-147.774-13.419-58.433-136.77C276.71 6.98 266.898.494 255.996.494s-20.715 6.487-25.023 16.534l-58.434 136.746-147.797 13.418A27.208 27.208 0 0 0 1.34 185.902c-3.371 10.368-.258 21.739 7.957 28.907l111.7 97.96-32.938 145.09c-2.41 10.668 1.73 21.696 10.582 28.094 4.757 3.438 10.324 5.188 15.937 5.188 4.84 0 9.64-1.305 13.95-3.883l127.468-76.184 127.422 76.184c9.324 5.61 21.078 5.097 29.91-1.305a27.223 27.223 0 0 0 10.582-28.094l-32.937-145.09 111.699-97.94a27.224 27.224 0 0 0 7.98-28.927zm0 0" data-original="#ffc107" class=""></path></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 511.987 511" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g transform="matrix(1,0,0,1,0,10)"><path fill="#ffc107" d="M510.652 185.902a27.158 27.158 0 0 0-23.425-18.71l-147.774-13.419-58.433-136.77C276.71 6.98 266.898.494 255.996.494s-20.715 6.487-25.023 16.534l-58.434 136.746-147.797 13.418A27.208 27.208 0 0 0 1.34 185.902c-3.371 10.368-.258 21.739 7.957 28.907l111.7 97.96-32.938 145.09c-2.41 10.668 1.73 21.696 10.582 28.094 4.757 3.438 10.324 5.188 15.937 5.188 4.84 0 9.64-1.305 13.95-3.883l127.468-76.184 127.422 76.184c9.324 5.61 21.078 5.097 29.91-1.305a27.223 27.223 0 0 0 10.582-28.094l-32.937-145.09 111.699-97.94a27.224 27.224 0 0 0 7.98-28.927zm0 0" data-original="#ffc107" class=""></path></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 511.987 511" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g transform="matrix(1,0,0,1,0,10)"><path fill="#ffc107" d="M510.652 185.902a27.158 27.158 0 0 0-23.425-18.71l-147.774-13.419-58.433-136.77C276.71 6.98 266.898.494 255.996.494s-20.715 6.487-25.023 16.534l-58.434 136.746-147.797 13.418A27.208 27.208 0 0 0 1.34 185.902c-3.371 10.368-.258 21.739 7.957 28.907l111.7 97.96-32.938 145.09c-2.41 10.668 1.73 21.696 10.582 28.094 4.757 3.438 10.324 5.188 15.937 5.188 4.84 0 9.64-1.305 13.95-3.883l127.468-76.184 127.422 76.184c9.324 5.61 21.078 5.097 29.91-1.305a27.223 27.223 0 0 0 10.582-28.094l-32.937-145.09 111.699-97.94a27.224 27.224 0 0 0 7.98-28.927zm0 0" data-original="#ffc107" class=""></path></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 511.987 511" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g transform="matrix(1,0,0,1,0,10)"><path fill="#ffc107" d="M510.652 185.902a27.158 27.158 0 0 0-23.425-18.71l-147.774-13.419-58.433-136.77C276.71 6.98 266.898.494 255.996.494s-20.715 6.487-25.023 16.534l-58.434 136.746-147.797 13.418A27.208 27.208 0 0 0 1.34 185.902c-3.371 10.368-.258 21.739 7.957 28.907l111.7 97.96-32.938 145.09c-2.41 10.668 1.73 21.696 10.582 28.094 4.757 3.438 10.324 5.188 15.937 5.188 4.84 0 9.64-1.305 13.95-3.883l127.468-76.184 127.422 76.184c9.324 5.61 21.078 5.097 29.91-1.305a27.223 27.223 0 0 0 10.582-28.094l-32.937-145.09 111.699-97.94a27.224 27.224 0 0 0 7.98-28.927zm0 0" data-original="#ffc107" class=""></path></g></svg>
+            </div>
+
+            <div class="cntrTitleMobile">
+                <p class="nomeProdutoMobile">Air Jordan 6 Retro SP</p>
+                <div class="cntrEstrelasMobile">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 511.987 511" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g transform="matrix(1,0,0,1,0,10)"><path fill="#ffc107" d="M510.652 185.902a27.158 27.158 0 0 0-23.425-18.71l-147.774-13.419-58.433-136.77C276.71 6.98 266.898.494 255.996.494s-20.715 6.487-25.023 16.534l-58.434 136.746-147.797 13.418A27.208 27.208 0 0 0 1.34 185.902c-3.371 10.368-.258 21.739 7.957 28.907l111.7 97.96-32.938 145.09c-2.41 10.668 1.73 21.696 10.582 28.094 4.757 3.438 10.324 5.188 15.937 5.188 4.84 0 9.64-1.305 13.95-3.883l127.468-76.184 127.422 76.184c9.324 5.61 21.078 5.097 29.91-1.305a27.223 27.223 0 0 0 10.582-28.094l-32.937-145.09 111.699-97.94a27.224 27.224 0 0 0 7.98-28.927zm0 0" data-original="#ffc107" class=""></path></g></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 511.987 511" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g transform="matrix(1,0,0,1,0,10)"><path fill="#ffc107" d="M510.652 185.902a27.158 27.158 0 0 0-23.425-18.71l-147.774-13.419-58.433-136.77C276.71 6.98 266.898.494 255.996.494s-20.715 6.487-25.023 16.534l-58.434 136.746-147.797 13.418A27.208 27.208 0 0 0 1.34 185.902c-3.371 10.368-.258 21.739 7.957 28.907l111.7 97.96-32.938 145.09c-2.41 10.668 1.73 21.696 10.582 28.094 4.757 3.438 10.324 5.188 15.937 5.188 4.84 0 9.64-1.305 13.95-3.883l127.468-76.184 127.422 76.184c9.324 5.61 21.078 5.097 29.91-1.305a27.223 27.223 0 0 0 10.582-28.094l-32.937-145.09 111.699-97.94a27.224 27.224 0 0 0 7.98-28.927zm0 0" data-original="#ffc107" class=""></path></g></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 511.987 511" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g transform="matrix(1,0,0,1,0,10)"><path fill="#ffc107" d="M510.652 185.902a27.158 27.158 0 0 0-23.425-18.71l-147.774-13.419-58.433-136.77C276.71 6.98 266.898.494 255.996.494s-20.715 6.487-25.023 16.534l-58.434 136.746-147.797 13.418A27.208 27.208 0 0 0 1.34 185.902c-3.371 10.368-.258 21.739 7.957 28.907l111.7 97.96-32.938 145.09c-2.41 10.668 1.73 21.696 10.582 28.094 4.757 3.438 10.324 5.188 15.937 5.188 4.84 0 9.64-1.305 13.95-3.883l127.468-76.184 127.422 76.184c9.324 5.61 21.078 5.097 29.91-1.305a27.223 27.223 0 0 0 10.582-28.094l-32.937-145.09 111.699-97.94a27.224 27.224 0 0 0 7.98-28.927zm0 0" data-original="#ffc107" class=""></path></g></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 511.987 511" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g transform="matrix(1,0,0,1,0,10)"><path fill="#ffc107" d="M510.652 185.902a27.158 27.158 0 0 0-23.425-18.71l-147.774-13.419-58.433-136.77C276.71 6.98 266.898.494 255.996.494s-20.715 6.487-25.023 16.534l-58.434 136.746-147.797 13.418A27.208 27.208 0 0 0 1.34 185.902c-3.371 10.368-.258 21.739 7.957 28.907l111.7 97.96-32.938 145.09c-2.41 10.668 1.73 21.696 10.582 28.094 4.757 3.438 10.324 5.188 15.937 5.188 4.84 0 9.64-1.305 13.95-3.883l127.468-76.184 127.422 76.184c9.324 5.61 21.078 5.097 29.91-1.305a27.223 27.223 0 0 0 10.582-28.094l-32.937-145.09 111.699-97.94a27.224 27.224 0 0 0 7.98-28.927zm0 0" data-original="#ffc107" class=""></path></g></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 511.987 511" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g transform="matrix(1,0,0,1,0,10)"><path fill="#ffc107" d="M510.652 185.902a27.158 27.158 0 0 0-23.425-18.71l-147.774-13.419-58.433-136.77C276.71 6.98 266.898.494 255.996.494s-20.715 6.487-25.023 16.534l-58.434 136.746-147.797 13.418A27.208 27.208 0 0 0 1.34 185.902c-3.371 10.368-.258 21.739 7.957 28.907l111.7 97.96-32.938 145.09c-2.41 10.668 1.73 21.696 10.582 28.094 4.757 3.438 10.324 5.188 15.937 5.188 4.84 0 9.64-1.305 13.95-3.883l127.468-76.184 127.422 76.184c9.324 5.61 21.078 5.097 29.91-1.305a27.223 27.223 0 0 0 10.582-28.094l-32.937-145.09 111.699-97.94a27.224 27.224 0 0 0 7.98-28.927zm0 0" data-original="#ffc107" class=""></path></g></svg>
+                </div>
+                <div class="precoMobile">$225</div>
+            </div>
+
+            <div class="cntrImgMainMobile">
+                <img src="img/tenis.png" alt="">
+            </div>
+            <p class="sobreProduto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, magnam obcaecati architecto porro sapiente ducimus accusantium quod pariatur quidem aperiam cumque dolores sit voluptas deleniti ipsa harum odio culpa nisi.</p>
+            <div class="cntrBtns">
+                <button id="addCart">Add ao carrinho</button>
+                <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M376 30c-27.783 0-53.255 8.804-75.707 26.168-21.525 16.647-35.856 37.85-44.293 53.268-8.437-15.419-22.768-36.621-44.293-53.268C189.255 38.804 163.783 30 136 30 58.468 30 0 93.417 0 177.514c0 90.854 72.943 153.015 183.369 247.118 18.752 15.981 40.007 34.095 62.099 53.414C248.38 480.596 252.12 482 256 482s7.62-1.404 10.532-3.953c22.094-19.322 43.348-37.435 62.111-53.425C439.057 330.529 512 268.368 512 177.514 512 93.417 453.532 30 376 30z" fill="#000000" data-original="#000000" class=""></path></g></svg>
+                    Add aos favoritos
+                </button>
+            </div>
+        </div>
+        <div class="cntrRight">
+            <div class="cntrImgMain">
+                <img src="img/tenis.png" alt="">
+            </div>
+        </div>
+    </main>
+
+
+    <div class="carrinho">
+        <svg class="bntVoltarCart" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M492 236H68.442l70.164-69.824c7.829-7.792 7.859-20.455.067-28.284-7.792-7.83-20.456-7.859-28.285-.068l-104.504 104-.018.019c-7.809 7.792-7.834 20.496-.002 28.314l.018.019 104.504 104c7.828 7.79 20.492 7.763 28.285-.068 7.792-7.829 7.762-20.492-.067-28.284L68.442 276H492c11.046 0 20-8.954 20-20s-8.954-20-20-20z" fill="#ffffff" data-original="#000000"></path></g></svg>
+        <h1>Seu carrinho</h1>
+        <p class="numItensCart">0 ITEM</p>
+
+        <div class="cntrMainCart">
+            <div class="boxItemCart">
+                <div class="cntrMiniImgCart">
+                    <!--img produto-->
+                    <img src="img/tenis.png" alt="">
+                </div>
+                <div class="cntrNomePrecoItemCart">
+                    <h2>Air Jordan 6</h2>
+                    <p>Retro SP</p>
+                    <p class="precoItemCart">R$ 225,45</p>
+                </div>
+                <div class="cntrExcluirItemCart">
+                    <h2>Deseja excluir esse item?</h2>
+                    <div class="cntrBtnExcluirItemCart">
+                        <button class="btnExcluirCart">Excluir</button>
+                        <button class="btnCancelarExcluirCart">Cancelar</button>
+                    </div>
+                </div>
+                <div class="cntrQuantidadeItemCart">
+                    <button class="maisQuantidade">+</button>
+                    <p class="textQuantidade">1</p>
+                    <button class="menosQuantidade">-</button>
+                </div>
+            </div>
+            <div class="cntrPrecoTotalCart">
+                <span>
+                    <p>Subtotal</p>
+                    <p id="numSubtotal">R$ 255,45</p>
+                </span>
+                <span>
+                    <p>Frete</p>
+                    <p>R$ 20,00</p>
+                </span>
+                 <span>
+                    <p>Total</p>
+                    <p id="numTotal">R$ 255,45</p>
+                </span>
+            </div>
+        </div>
+
+        <button class="btnComprarAgoraCart">Comprar agora</button>
+    </div>
+
+
+
+    <script>
+
+// CONTROLE DO "HOVER" DAS .categotias EM HEADER
+
+        // pegar todas as ".categotias" em header
+        let categoarias = document.querySelectorAll(".categoarias")
+
+        // quando alguma ".categoria" for clicada vai chamar clickCategorias(indice)
+        function clickCategorias(indice){
+            // todas as ".categorias" vão ficar na estilização padrão
+            for (let i = 0; i < categoarias.length; i++) {
+                categoarias[i].style.color = "#ccc"
+                categoarias[i].style.borderBottom =  "1px solid transparent"
+            }
+
+            // a ".categoria" q foi clicada sera estilizada 
+            categoarias[indice].style.borderBottom =  "1px solid #ccc"
+            categoarias[indice].style.color =  "white"
+            categoarias[indice].style.transition =  ".5s"
+        }
+        
+        // Abrir a pag com a primeira ".categoria" marcada
+        clickCategorias("0")
+//
+
+
+
+// CLIQUE "ADD AO CARRINHO"
+
+        let bntAddCart = document.getElementById("addCart")
+
+        // "noCarrinho" sera false até o item ser add ao carrinho
+        let noCarrinho = false;
+
+        // numero que representa a quantidade de itens que tem no carrinho
+        let numCarrinho = document.getElementById("numCarrinho")
+
+        bntAddCart.addEventListener('click', function() {
+
+            // verificar se o item ja esta no carrinho
+            if (noCarrinho == false) {
+
+                // quando clicar no botão o texto dele vai ser alterado
+                bntAddCart.classList.add('bntAddCartClicado');
+                bntAddCart.classList.remove('bntAddCartNaoClicado');
+
+                bntAddCart.innerHTML = "Adicionado!"
+
+                numCarrinho.style.transition = "1s"
+                numCarrinho.style.transform = "scale(1.5)"
+
+                setTimeout(() => {
+                    numCarrinho.style.transform = "scale(1)"
+                    numCarrinho.innerHTML = "1"
+                }, 500);
+
+                setTimeout(() => {
+                    bntAddCart.innerHTML = "Ver no carrinho"
+                    bntAddCart.classList.remove('bntAddCartClicado');
+                    bntAddCart.classList.add('bntAddCartNaoClicado');
+
+                }, 2000);
+
+                noCarrinho = true
+                controlllerCart(1);
+            }
+            else{
+                // se o item ja estiver no carrinho, vai abrir a aba "carrinho"
+                abrirAbaCarrinho()
+                
+            }
+
+        })
+    
+//
+
+
+
+// TAMANHO DO cntrCamadaFundo
+
+        const body = document.querySelector('body');
+        const cntrCamadaFundo = document.querySelector('.cntrCamadaFundo');
+        const bodyHeight = body.clientHeight;
+
+        cntrCamadaFundo.style.height = bodyHeight + 'px';
+
+//
+
+
+
+// VERIFICAR SE ESTÁ NA VERSÃO MOBILE OU NÃO
+        let mobile = false;
+
+        window.addEventListener('DOMContentLoaded', function() {
+            
+            function checkScreenWidth() {
+                var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+                
+                if (screenWidth <= 850) {
+                    mobile = true;
+                } else {
+                    mobile = false;
+                }
+                
+                console.log('Mobile:', mobile);
+            }
+            
+            // Verificar a largura da tela ao carregar a página
+            checkScreenWidth();
+            
+            // Verificar a largura da tela ao redimensionar
+            window.addEventListener('resize', checkScreenWidth);
+        });
+
+//
+
+
+// FECHAR ABA CARRINHO / ABRIR ABA CARRINHO
+
+        document.querySelector('.bntVoltarCart').addEventListener('click', function() {
+            document.querySelector('.carrinho').style.animation = "carrinhoClose .8s normal"
+            setTimeout(() => {
+                document.querySelector('.carrinho').style.display = "none"
+            }, 750);
+        })
+
+        function abrirAbaCarrinho() {
+            window.scrollTo(0, 0);
+            document.querySelector('.carrinho').style.display = "block"
+            document.querySelector('.carrinho').style.animation = "carrinhoOpen .8s both"
+        }
+
+//
+
+
+// AUMENTAR OU DIMINUIR A QUANTIDADE DO ITEM NO CARRINHO
+        let textQuantidade = document.querySelector(".textQuantidade")
+        let precoItem = 254.99
+        let precoItemQuantidade = precoItem;
+        let precoMobile = document.querySelector(".precoMobile")
+        let preco = document.querySelector(".preco")
+        let numTotal = document.getElementById("numTotal")
+        let numSubtotal = document.getElementById("numSubtotal")
+        let precoItemCart = document.querySelector(".precoItemCart")
+        precoItemCart.innerHTML = "R$ " + precoItem.toFixed(2).replace(".", ",")
+
+        textQuantidade.innerHTML = 1
+
+        document.querySelector('.maisQuantidade').addEventListener('click', function() {
+            textQuantidade.innerHTML = parseInt(textQuantidade.innerHTML) + 1
+            precoItemQuantidade = precoItem * parseInt(textQuantidade.innerHTML) +20
+            attPreco()
+        })
+
+        document.querySelector('.menosQuantidade').addEventListener('click', function() {
+            if (textQuantidade.innerHTML == "1") {
+                // deseja excluir essa item do carrinho?
+                document.querySelector(".boxItemCart").style.backgroundColor = "rgb(255 0 0 / 10%)"
+                document.querySelector(".cntrNomePrecoItemCart").style.display = "none"
+                document.querySelector(".cntrQuantidadeItemCart").style.display = "none"
+                document.querySelector(".cntrExcluirItemCart").style.display = "block"
+                
+            }else{
+                textQuantidade.innerHTML = parseInt(textQuantidade.innerHTML) - 1
+                precoItemQuantidade = precoItem * parseInt(textQuantidade.innerHTML) +20
+                attPreco()
+            }
+        })
+
+        attPreco()
+        function attPreco(){
+            preco.innerHTML = "R$ " + precoItem.toFixed(2).replace(".", ",")
+            precoMobile.innerHTML = preco.innerHTML
+            numSubtotal.innerHTML = "R$ " + (precoItemQuantidade-20).toFixed(2).replace(".", ",")
+            numTotal.innerHTML = "R$ " + precoItemQuantidade.toFixed(2).replace(".", ",")
+        }
+
+
+        document.querySelector('.btnCancelarExcluirCart').addEventListener('click', function() {
+            document.querySelector(".boxItemCart").style.backgroundColor = "rgb(255 0 0 / 0%)"
+            document.querySelector(".cntrNomePrecoItemCart").style.display = "block"
+            document.querySelector(".cntrQuantidadeItemCart").style.display = "flex"
+            document.querySelector(".cntrExcluirItemCart").style.display = "none"
+        })
+
+        document.querySelector('.btnExcluirCart').addEventListener('click', function() {
+            // excluir item do carrinho
+            controlllerCart(0);
+        })
+//
+
+
+        function controlllerCart(numItens){
+            if(numItens > 0){
+                // se tiver itens no cart
+                document.querySelector(".cntrMainCart").style.display = "block"
+                //document.getElementById("numCarrinho").innerHTML = "1"
+                noCarrinho = true
+                //bntAddCart.innerHTML = "Ver no carrinho"
+                document.querySelector(".numItensCart").innerHTML = "1 ITEM"
+
+            }else{
+                // se não tiver itens no cart
+                document.querySelector(".cntrMainCart").style.display = "none"
+                document.getElementById("numCarrinho").innerHTML = "0"
+                noCarrinho = false
+                bntAddCart.innerHTML = "ADD AO CARRINHO"
+                document.querySelector(".boxItemCart").style.backgroundColor = "rgb(255 0 0 / 0%)"
+                document.querySelector(".cntrNomePrecoItemCart").style.display = "block"
+                document.querySelector(".cntrQuantidadeItemCart").style.display = "flex"
+                document.querySelector(".cntrExcluirItemCart").style.display = "none"
+                document.querySelector(".numItensCart").innerHTML = "0 ITEM"
+            }
+        }
+
+//document.querySelector(".precoMobile").innerHTML = "$009"
+    </script>
+
+
+</body>
+</html>
